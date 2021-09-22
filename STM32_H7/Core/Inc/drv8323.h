@@ -51,12 +51,14 @@
 #define CSA_CAL_C_SHORT         0x1 // Short inputs to current sense amplifier A for offset calibration
 
 #define TIMEOUT 1000
+#define CHECK_BIT(var, pos) ((var) & (1 << (pos)))
 
 typedef struct {
     bool FAULT;   // Logic OR of FAULT status registers. Mirrors nFAULT pin.
     bool VDS_OCP; // VDS monitor over-current fault condition.
     bool GDF;     // Gate drive fault.
     bool UVLO;    // Under-voltage lockout fault.
+    bool OTSD;    // Over-temperature shutdown.
     bool VDS_HA;  // VDS over-current fault on A high-side MOSFET.
     bool VDS_LA;  // VDS over-current fault on A low-side MOSFET.
     bool VDS_HB;  // VDS over-current fault on B high-side MOSFET.
@@ -221,15 +223,26 @@ typedef struct {
    SPI_HandleTypeDef *spiHandler;
    GPIO_TypeDef *csPinBank;
    uint16_t csPin;
-   uint16_t txBuf[10];
-   uint16_t rxBuf[10];
+   union {
+       uint8_t txBuf[2];
+       uint16_t tx_control_word;
+   };
+   union {
+       uint8_t rxBuf[2];
+       uint16_t rx_control_word;
+   };
 } DRV8323;
 
 uint8_t DRV_Init(DRV8323 *drv, SPI_HandleTypeDef *spiHandler, GPIO_TypeDef *csPinBank, uint16_t csPin);
 
-uint8_t DRV_WriteRegister(DRV8323 *drv, uint8_t regAddr);
+uint16_t DRV_WriteSPI(DRV8323 *drv, uint16_t value);
 
-uint8_t DRV_ReadRegister(DRV8323 *drv, uint8_t regAddr);
+uint16_t DRV_ReadRegister(DRV8323 *drv, uint8_t regAddr);
+
+void DRV_WriteRegister(DRV8323 *drv, uint8_t regAddr);
+
+FAULT_STATUS_ONE DRV_ReadFaultStatusOne(DRV8323 *drv);
+
 
 
 #endif //STM32_H7_DRV8323_H
