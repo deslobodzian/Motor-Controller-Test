@@ -47,8 +47,26 @@ FAULT_STATUS_ONE DRV_ReadFaultStatusOne(DRV8323 *drv) {
     fs1.VDS_LC = CHECK_BIT(val, 1);
     return fs1;
 }
+FAULT_STATUS_TWO DRV_ReadFaultStatusTwo(DRV8323 *drv) {
+    uint16_t val = DRV_ReadRegister(drv, FS2);
+    FAULT_STATUS_TWO fs2;
+    fs2.SA_OC = CHECK_BIT(val, 11);
+    fs2.SB_OC = CHECK_BIT(val, 10);
+    fs2.SC_OC = CHECK_BIT(val, 9);
+    fs2.OTW = CHECK_BIT(val, 8);
+    fs2.CPU_V = CHECK_BIT(val, 7);
+    fs2.VGS_HA = CHECK_BIT(val, 6);
+    fs2.VGS_LA = CHECK_BIT(val, 5);
+    fs2.VGS_HB= CHECK_BIT(val, 4);
+    fs2.VGS_LB= CHECK_BIT(val, 3);
+    fs2.VGS_HC= CHECK_BIT(val, 2);
+    fs2.VGS_LC= CHECK_BIT(val, 1);
+    return fs2;
+}
 
 void DRV_WriteRegister(DRV8323 *drv, uint8_t regAddr) {
     // Set which address we will be reading
     DRV_WriteSPI(drv, (regAddr << 11) | 0x8000);
 }
+
+

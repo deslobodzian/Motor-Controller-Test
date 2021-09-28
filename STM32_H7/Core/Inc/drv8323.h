@@ -234,14 +234,21 @@ typedef struct {
 } DRV8323;
 
 uint8_t DRV_Init(DRV8323 *drv, SPI_HandleTypeDef *spiHandler, GPIO_TypeDef *csPinBank, uint16_t csPin);
-
 uint16_t DRV_WriteSPI(DRV8323 *drv, uint16_t value);
-
 uint16_t DRV_ReadRegister(DRV8323 *drv, uint8_t regAddr);
-
 void DRV_WriteRegister(DRV8323 *drv, uint8_t regAddr);
-
+void DRV_WriteDRC(DRV8323 *drv,
+                  int DIS_CPUV,
+                  int DIS_GDF,
+                  int ODW_REP,
+                  int PWM_MODE,
+                  int PWM_COM,
+                  int PWM_DIR,
+                  int COAST,
+                  int BREAK,
+                  int CLR_FLT);
 FAULT_STATUS_ONE DRV_ReadFaultStatusOne(DRV8323 *drv);
+FAULT_STATUS_TWO DRV_ReadFaultStatusTwo(DRV8323 *drv);
 
 
 
