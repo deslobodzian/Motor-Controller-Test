@@ -68,20 +68,51 @@ void DRV_WriteRegister(DRV8323 *drv, uint8_t regAddr, uint16_t value) {
     // Set which address we will be reading
     DRV_WriteSPI(drv, (regAddr << 11) | value);
 }
-void DRV_WriteDCR (
-        DRV8323 *drv,
-        int DIS_CPUV,
-        int DIS_GDF,
-        int ODW_REP,
-        int PWM_MODE,
-        int PWM_COM,
-        int PWM_DIR,
-        int COAST,
-        int BREAK,
-        int CLR_FLT) {
+void DRV_WriteDCR(DRV8323 *drv,
+                  int DIS_CPUV,
+                  int DIS_GDF,
+                  int ODW_REP,
+                  int PWM_MODE,
+                  int PWM_COM,
+                  int PWM_DIR,
+                  int COAST,
+                  int BREAK,
+                  int CLR_FLT) {
     uint16_t ctrWord =
             (DIS_CPUV << 9) | (DIS_GDF << 8) | (ODW_REP << 7) |
             (PWM_MODE << 5) | (PWM_COM << 4) | (PWM_DIR << 3) |
             (COAST << 2) | (BREAK << 1) | CLR_FLT;
     DRV_WriteRegister(drv, DCR, ctrWord);
+}
+
+void DRV_WriteGD_HS(DRV8323 *drv, int LOCK, int IDRIVEP_HS, int IDRIVEN_HS) {
+    uint16_t ctrWord = (LOCK << 8) | (IDRIVEP_HS << 4) | IDRIVEN_HS;
+    DRV_WriteRegister(drv, GD_HS, ctrWord);
+}
+
+void DRV_WriteGD_LS(DRV8323 *drv, int CBC, int TDRIVE, int IDRIVEP_LS, int IDRIVEN_LS) {
+    uint16_t ctrWord = (CBC << 10) | (TDRIVE << 8) | (IDRIVEP_LS << 4) | IDRIVEN_LS;
+    DRV_WriteRegister(drv, GD_LS, ctrWord);
+}
+
+void DRV_WriteOCP(DRV8323 *drv, int TRETRY, int DEAD_TIME, int OCP_MODE, int OCP_DEG, int VDS_LVL) {
+    uint16_t ctrWord = (TRETRY << 10) | (DEAD_TIME << 8) | (OCP_MODE << 6) | (OCP_DEG) | VDS_LVL;
+    DRV_WriteRegister(drv, OCP, ctrWord);
+}
+
+void DRIV_WriteCSA(DRV8323 *drv,
+                   int CSA_FET,
+                   int VREF_DIF,
+                   int LS_REF,
+                   int CSA_GAIN,
+                   int DIS_SEN,
+                   int CSA_CAL_A,
+                   int CSA_CAL_B,
+                   int CSA_CAL_C,
+                   int SEN_LVL) {
+    uint16_t ctrWord =
+            (CSA_FET << 10) | (VREF_DIF << 9) | (LS_REF << 8) |
+            (CSA_GAIN << 6) | (DIS_SEN << 5) | (CSA_CAL_A << 4) |
+            (CSA_CAL_B << 3) | (CSA_CAL_C << 2) | SEN_LVL;
+    DRV_WriteRegister(drv, CSA, ctrWord);
 }

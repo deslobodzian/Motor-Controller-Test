@@ -247,6 +247,19 @@ void DRV_WriteDCR(DRV8323 *drv,
                   int COAST,
                   int BREAK,
                   int CLR_FLT);
+void DRV_WriteGD_HS(DRV8323 *drv, int LOCK, int IDRIVEP_HS, int IDRIVEN_HS);
+void DRV_WriteGD_LS(DRV8323 *drv, int CBC, int TDRIVE, int IDRIVEP_LS, int IDRIVEN_LS);
+void DRV_WriteOCP(DRV8323 *drv, int TRETRY, int DEAD_TIME, int OCP_MODE, int OCP_DEG, int VDS_LVL);
+void DRIV_WriteCSA(DRV8323 *drv,
+                   int CSA_FET,
+                   int VREF_DIF,
+                   int LS_REF,
+                   int CSA_GAIN,
+                   int DIS_SEN,
+                   int CSA_CAL_A,
+                   int CSA_CAL_B,
+                   int CSA_CAL_C,
+                   int SEN_LVL);
 FAULT_STATUS_ONE DRV_ReadFaultStatusOne(DRV8323 *drv);
 FAULT_STATUS_TWO DRV_ReadFaultStatusTwo(DRV8323 *drv);
 
