@@ -57,16 +57,31 @@ FAULT_STATUS_TWO DRV_ReadFaultStatusTwo(DRV8323 *drv) {
     fs2.CPU_V = CHECK_BIT(val, 7);
     fs2.VGS_HA = CHECK_BIT(val, 6);
     fs2.VGS_LA = CHECK_BIT(val, 5);
-    fs2.VGS_HB= CHECK_BIT(val, 4);
-    fs2.VGS_LB= CHECK_BIT(val, 3);
-    fs2.VGS_HC= CHECK_BIT(val, 2);
-    fs2.VGS_LC= CHECK_BIT(val, 1);
+    fs2.VGS_HB = CHECK_BIT(val, 4);
+    fs2.VGS_LB = CHECK_BIT(val, 3);
+    fs2.VGS_HC = CHECK_BIT(val, 2);
+    fs2.VGS_LC = CHECK_BIT(val, 1);
     return fs2;
 }
 
-void DRV_WriteRegister(DRV8323 *drv, uint8_t regAddr) {
+void DRV_WriteRegister(DRV8323 *drv, uint8_t regAddr, uint16_t value) {
     // Set which address we will be reading
-    DRV_WriteSPI(drv, (regAddr << 11) | 0x8000);
+    DRV_WriteSPI(drv, (regAddr << 11) | value);
 }
-
-
+void DRV_WriteDCR (
+        DRV8323 *drv,
+        int DIS_CPUV,
+        int DIS_GDF,
+        int ODW_REP,
+        int PWM_MODE,
+        int PWM_COM,
+        int PWM_DIR,
+        int COAST,
+        int BREAK,
+        int CLR_FLT) {
+    uint16_t ctrWord =
+            (DIS_CPUV << 9) | (DIS_GDF << 8) | (ODW_REP << 7) |
+            (PWM_MODE << 5) | (PWM_COM << 4) | (PWM_DIR << 3) |
+            (COAST << 2) | (BREAK << 1) | CLR_FLT;
+    DRV_WriteRegister(drv, DCR, ctrWord);
+}

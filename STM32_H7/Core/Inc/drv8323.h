@@ -236,8 +236,8 @@ typedef struct {
 uint8_t DRV_Init(DRV8323 *drv, SPI_HandleTypeDef *spiHandler, GPIO_TypeDef *csPinBank, uint16_t csPin);
 uint16_t DRV_WriteSPI(DRV8323 *drv, uint16_t value);
 uint16_t DRV_ReadRegister(DRV8323 *drv, uint8_t regAddr);
-void DRV_WriteRegister(DRV8323 *drv, uint8_t regAddr);
-void DRV_WriteDRC(DRV8323 *drv,
+void DRV_WriteRegister(DRV8323 *drv, uint8_t regAddr, uint16_t value);
+void DRV_WriteDCR(DRV8323 *drv,
                   int DIS_CPUV,
                   int DIS_GDF,
                   int ODW_REP,
