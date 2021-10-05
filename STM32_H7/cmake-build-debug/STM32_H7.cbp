@@ -96,6 +96,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Inc/as5247u.h">
+			<Option target="STM32_H7.elf"/>
+		</Unit>
 		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Inc/drv8323.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
