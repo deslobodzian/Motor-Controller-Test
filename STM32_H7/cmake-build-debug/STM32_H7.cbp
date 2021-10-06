@@ -111,6 +111,9 @@
 		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Inc/stm32h7xx_it.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
+		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Src/as5247u.c">
+			<Option target="STM32_H7.elf"/>
+		</Unit>
 		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Src/drv8323.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>

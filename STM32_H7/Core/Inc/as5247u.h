@@ -29,15 +29,31 @@
 #define SETTINGS_TWO    0x0019
 #define SETTINGS_THREE  0x001A
 #define ECC             0x001B
+
+// Other
+#define TIMEOUT 1000
 typedef struct {
     SPI_HandleTypeDef *spiHandle;
     GPIO_TypeDef  *csPinBankTop;
     GPIO_TypeDef  *csPinBankBottom;
     uint16_t csPinTop;
     uint16_t csPinBottom;
+    // use 16-bit SPI frame for now, add CRC frames once basic function is working
+    union {
+        uint8_t txBuf[2];
+        uint16_t txControlWord;
+    };
+    // use 16-bit SPI frame for now, add CRC frames once basic function is working
+    union {
+        uint8_t rxBuf[2];
+        uint16_t rxControlWord;
+    };
+
+    uint16_t rawPosition;
+    uint16_t velocity;
 } AS5247U;
 
-uint8_t AS5247U_WriteSPI();
+uint16_t AS5247U_ReadSPI(AS5247U *enc, uint16_t addr, uint16_t val);
 
 
 

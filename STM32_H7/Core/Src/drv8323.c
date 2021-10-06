@@ -12,7 +12,7 @@ uint8_t DRV_Init(DRV8323 *drv, SPI_HandleTypeDef *spiHandler, GPIO_TypeDef *csPi
 }
 
 uint16_t DRV_WriteSPI(DRV8323 *drv, uint16_t value) {
-    drv->tx_control_word = value;
+    drv->txControlWord = value;
 
     HAL_GPIO_WritePin(drv->csPinBank, drv->csPin, GPIO_PIN_RESET);
 
@@ -24,7 +24,7 @@ uint16_t DRV_WriteSPI(DRV8323 *drv, uint16_t value) {
 
     HAL_GPIO_WritePin(drv->csPinBank, drv->csPin, GPIO_PIN_SET);
 
-    return drv->rx_control_word;
+    return drv->rxControlWord;
 }
 
 uint16_t DRV_ReadRegister(DRV8323 *drv, uint8_t regAddr) {
