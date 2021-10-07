@@ -53,7 +53,14 @@ typedef struct {
     uint16_t velocity;
 } AS5247U;
 
-uint16_t AS5247U_ReadSPI(AS5247U *enc, uint16_t addr, uint16_t val);
+uint8_t AS5247U_Initialize(AS5247U *enc,
+                           SPI_HandleTypeDef *spiHandle,
+                           GPIO_TypeDef *csPinBankTop,
+                           GPIO_TypeDef *csPinBankBottom,
+                           uint16_t csPinTop,
+                           uint16_t csPinBottom);
+uint16_t AS5247U_ReadSPI(AS5247U *enc, uint16_t addr);
+uint16_t AS5247U_GetVelocity(AS5247U *enc);
 
 
 
