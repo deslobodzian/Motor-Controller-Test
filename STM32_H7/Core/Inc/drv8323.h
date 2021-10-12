@@ -225,11 +225,11 @@ typedef struct {
    uint16_t csPin;
    union {
        uint8_t txBuf[2];
-       uint16_t txControlWord;
+       uint16_t txData;
    };
    union {
        uint8_t rxBuf[2];
-       uint16_t rxControlWord;
+       uint16_t rxData;
    };
 } DRV8323;
 

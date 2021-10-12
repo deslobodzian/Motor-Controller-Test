@@ -41,12 +41,12 @@ typedef struct {
     // use 16-bit SPI frame for now, add CRC frames once basic function is working
     union {
         uint8_t txBuf[2];
-        uint16_t txControlWord;
+        uint16_t txData;
     };
     // use 16-bit SPI frame for now, add CRC frames once basic function is working
     union {
         uint8_t rxBuf[2];
-        uint16_t rxControlWord;
+        uint16_t rxData;
     };
 
     uint16_t rawPosition;
@@ -61,6 +61,12 @@ uint8_t AS5247U_Initialize(AS5247U *enc,
                            uint16_t csPinBottom);
 uint16_t AS5247U_ReadSPI(AS5247U *enc, uint16_t addr);
 uint16_t AS5247U_GetVelocity(AS5247U *enc);
+uint16_t AS5247U_GetDiagnostic(AS5247U *enc);
+uint16_t AS5247U_GetErrorReg(AS5247U *enc);
+// sanity check to see if rxBuf returns the default register
+uint16_t AS5247U_GetNOP(AS5247U *enc);
+uint16_t AS5247U_GetPosition(AS5247U *enc);
+
 
 
 

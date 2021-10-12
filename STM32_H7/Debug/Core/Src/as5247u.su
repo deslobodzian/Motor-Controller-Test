@@ -1,0 +1,7 @@
+as5247u.c:7:9:AS5247U_Initialize	24	static
+as5247u.c:26:10:AS5247U_ReadSPI	24	static
+as5247u.c:41:10:AS5247U_GetVelocity	16	static
+as5247u.c:46:10:AS5247U_GetDiagnostic	16	static
+as5247u.c:51:10:AS5247U_GetNOP	16	static
+as5247u.c:55:10:AS5247U_GetPosition	16	static
+as5247u.c:59:10:AS5247U_GetErrorReg	16	static

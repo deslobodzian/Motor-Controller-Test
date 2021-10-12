@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/cmake-build-debug"/>
+				<Option working_dir="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="STM32_H7.elf">
-				<Option output="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/cmake-build-debug/STM32_H7.elf" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/cmake-build-debug"/>
+				<Option output="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/cmake-build-debug/STM32_H7.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -27,11 +27,11 @@
 					<Add option="-DDEBUG"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32H723xx"/>
-					<Add directory="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Inc"/>
-					<Add directory="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc"/>
-					<Add directory="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy"/>
-					<Add directory="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Device/ST/STM32H7xx/Include"/>
-					<Add directory="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include"/>
+					<Add directory="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Core/Inc"/>
+					<Add directory="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc"/>
+					<Add directory="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Device/ST/STM32H7xx/Include"/>
+					<Add directory="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include"/>
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -40,15 +40,15 @@
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 STM32_H7.elf"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 STM32_H7.elf"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="STM32_H7.elf/fast">
-				<Option output="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/cmake-build-debug/STM32_H7.elf" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/cmake-build-debug"/>
+				<Option output="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/cmake-build-debug/STM32_H7.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -56,11 +56,11 @@
 					<Add option="-DDEBUG"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32H723xx"/>
-					<Add directory="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Inc"/>
-					<Add directory="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc"/>
-					<Add directory="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy"/>
-					<Add directory="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Device/ST/STM32H7xx/Include"/>
-					<Add directory="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include"/>
+					<Add directory="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Core/Inc"/>
+					<Add directory="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc"/>
+					<Add directory="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Device/ST/STM32H7xx/Include"/>
+					<Add directory="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include"/>
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -69,328 +69,328 @@
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.07\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 STM32_H7.elf/fast"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 STM32_H7.elf/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/cmake-build-debug"/>
+				<Option working_dir="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/cmake-build-debug"/>
+				<Option working_dir="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\dslob\Documents\Robotics\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\DSlobodzian\Documents\Projects\Motor-Controller-Test\STM32_H7\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Inc/as5247u.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Core/Inc/as5247u.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Inc/drv8323.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Core/Inc/drv8323.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Inc/main.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Core/Inc/main.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Inc/stm32h7xx_hal_conf.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Core/Inc/stm32h7xx_hal_conf.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Inc/stm32h7xx_it.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Core/Inc/stm32h7xx_it.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Src/as5247u.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Core/Src/as5247u.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Src/drv8323.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Core/Src/drv8323.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Src/main.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Core/Src/main.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Src/stm32h7xx_hal_msp.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Core/Src/stm32h7xx_hal_msp.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Src/stm32h7xx_it.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Core/Src/stm32h7xx_it.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Src/syscalls.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Core/Src/syscalls.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Src/sysmem.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Core/Src/sysmem.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Src/system_stm32h7xx.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Core/Src/system_stm32h7xx.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Core/Startup/startup_stm32h723zgtx.s">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Core/Startup/startup_stm32h723zgtx.s">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h723xx.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/cmsis_armcc.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/cmsis_armcc.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/cmsis_armclang.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/cmsis_armclang.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/cmsis_armclang_ltm.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/cmsis_armclang_ltm.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/cmsis_compiler.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/cmsis_compiler.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/cmsis_gcc.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/cmsis_gcc.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/cmsis_iccarm.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/cmsis_iccarm.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/cmsis_version.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/cmsis_version.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_armv81mml.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_armv81mml.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_armv8mbl.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_armv8mbl.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_armv8mml.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_armv8mml.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_cm0.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_cm0.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_cm0plus.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_cm0plus.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_cm1.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_cm1.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_cm23.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_cm23.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_cm3.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_cm3.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_cm33.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_cm33.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_cm35p.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_cm35p.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_cm4.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_cm4.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_cm7.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_cm7.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_sc000.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_sc000.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_sc300.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/core_sc300.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/mpu_armv7.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/mpu_armv7.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/mpu_armv8.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/mpu_armv8.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/tz_context.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/CMSIS/Include/tz_context.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_eth.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_eth.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_eth_ex.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_eth_ex.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth_ex.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_eth_ex.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/STM32H723ZGTX_FLASH.ld">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/STM32H723ZGTX_FLASH.ld">
 			<Option target="STM32_H7.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/dslob/Documents/Robotics/Motor-Controller-Test/STM32_H7/CMakeLists.txt">
+		<Unit filename="C:/Users/DSlobodzian/Documents/Projects/Motor-Controller-Test/STM32_H7/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

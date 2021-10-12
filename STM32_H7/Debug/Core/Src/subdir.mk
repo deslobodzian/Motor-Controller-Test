@@ -5,6 +5,8 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Core/Src/as5247u.c \
+../Core/Src/drv8323.c \
 ../Core/Src/main.c \
 ../Core/Src/stm32h7xx_hal_msp.c \
 ../Core/Src/stm32h7xx_it.c \
@@ -13,6 +15,8 @@ C_SRCS += \
 ../Core/Src/system_stm32h7xx.c 
 
 C_DEPS += \
+./Core/Src/as5247u.d \
+./Core/Src/drv8323.d \
 ./Core/Src/main.d \
 ./Core/Src/stm32h7xx_hal_msp.d \
 ./Core/Src/stm32h7xx_it.d \
@@ -21,6 +25,8 @@ C_DEPS += \
 ./Core/Src/system_stm32h7xx.d 
 
 OBJS += \
+./Core/Src/as5247u.o \
+./Core/Src/drv8323.o \
 ./Core/Src/main.o \
 ./Core/Src/stm32h7xx_hal_msp.o \
 ./Core/Src/stm32h7xx_it.o \

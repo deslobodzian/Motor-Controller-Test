@@ -15,6 +15,8 @@ uint8_t AS5247U_Initialize(AS5247U *enc,
     enc->csPinBankBottom = csPinBankBottom;
     enc->csPinTop = csPinTop;
     enc->csPinBottom = csPinBottom;
+    enc->rawPosition = 0;
+    enc->velocity = 0;
 
     //Todo: create the initialization step along with testing the encoder to see if we are reading values correctly.
 
@@ -22,9 +24,9 @@ uint8_t AS5247U_Initialize(AS5247U *enc,
 }
 
 uint16_t AS5247U_ReadSPI(AS5247U *enc, uint16_t addr) {
-    enc->txControlWord = 0x4000 | addr;
-    HAL_GPIO_WritePin(enc->csPinBankBottom, enc->csPinBottom, GPIO_PIN_RESET);
+    enc->txData = 0x4000 | addr;
 
+    HAL_GPIO_WritePin(enc->csPinBankBottom, enc->csPinBottom, GPIO_PIN_RESET);
     HAL_SPI_TransmitReceive(
             enc->spiHandle,
             (uint8_t*) enc->txBuf,
@@ -33,13 +35,33 @@ uint16_t AS5247U_ReadSPI(AS5247U *enc, uint16_t addr) {
 
     HAL_GPIO_WritePin(enc->csPinBankBottom, enc->csPinBottom, GPIO_PIN_SET);
 
-    return enc->rxControlWord;
+    return enc->rxData;
 }
 
 uint16_t AS5247U_GetVelocity(AS5247U *enc) {
     enc->velocity = AS5247U_ReadSPI(enc, VEL);
     return enc->velocity;
 }
+
+uint16_t AS5247U_GetDiagnostic(AS5247U *enc) {
+//	return read(enc, DIA);
+	return AS5247U_ReadSPI(enc, DIA);
+}
+
+uint16_t AS5247U_GetNOP(AS5247U *enc) {
+    return AS5247U_ReadSPI(enc, NOP);
+}
+
+uint16_t AS5247U_GetPosition(AS5247U *enc) {
+	return AS5247U_ReadSPI(enc, ANGLECOM);
+}
+
+uint16_t AS5247U_GetErrorReg(AS5247U *enc) {
+	return AS5247U_ReadSPI(enc, ERRFL);
+}
+
+
+
 
 
 

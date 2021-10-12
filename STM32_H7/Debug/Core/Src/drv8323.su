@@ -1,0 +1,11 @@
+drv8323.c:6:9:DRV_Init	32	static
+drv8323.c:14:10:DRV_WriteSPI	24	static
+drv8323.c:30:10:DRV_ReadRegister	16	static
+drv8323.c:34:18:DRV_ReadFaultStatusOne	32	static
+drv8323.c:50:18:DRV_ReadFaultStatusTwo	32	static
+drv8323.c:67:6:DRV_WriteRegister	16	static
+drv8323.c:71:6:DRV_WriteDCR	32	static
+drv8323.c:88:6:DRV_WriteGD_HS	32	static
+drv8323.c:93:6:DRV_WriteGD_LS	32	static
+drv8323.c:98:6:DRV_WriteOCP	32	static
+drv8323.c:103:6:DRIV_WriteCSA	32	static
